@@ -7,21 +7,6 @@ from player import *
 from asteroid import *
 from asteroidfield import *
 
-"""
-def setup_groups():
-    updatable = pygame.sprite.Group()
-    drawable = pygame.sprite.Group()
-    asteroids = pygame.sprite.Group()
-    shots = pygame.sprite.Group()
-    return updatable, drawable, asteroids, shots
-
-def setup_containers(updatable, drawable, asteroids, shots):
-    Asteroid.containers = (asteroids, updatable, drawable)
-    Player.containers = (updatable, drawable)
-    AsteroidField.containers = (updatable,)
-    Shot.containers = (shots, updatable, drawable)
-"""
-
 def main():
 
     pygame.init()
