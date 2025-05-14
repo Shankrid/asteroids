@@ -55,7 +55,7 @@ def run_game(clock, screen, font, dt):
                     shot.kill()
         for asteroid in asteroids:
             if asteroid.collision(player) and player.invincible_timer <= 0:
-                if player_health > 0:
+                if player_health > 1:
                     player_health -= 1
                     player.invincible_timer = 1.0
                 else:
@@ -65,6 +65,7 @@ def run_game(clock, screen, font, dt):
             pygame.display.flip()
             keys = pygame.key.get_pressed()
             if keys[pygame.K_r]:
+                print("Restarting game...!")
                 return
         pygame.display.flip()
         dt = clock.tick(60) / 1000
